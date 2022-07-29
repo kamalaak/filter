@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js" ></script>
+ <script type="text/javascript" src="./js/main.js"></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+     
+<title> Image Filter </title>
+ </head>
+ <body onload="demo();">
+    <div class="container bg-gradient bg-dark text-center py-5 text-white">
+       <div class="text-center"> <h1><a href="#" class="image py-4"> Image Filter </a> </h1>
+        <input type="file" id = "upload-file" class="file-up py-5 ">  </input>
+       </div>
+<canvas id="canvas" class="container"> </canvas>
+
+
+<div class="Filters shadow-sm ">
+<h1 class="py-5 text-primary"> Filters </h1>
+<h3 class="py-2  rounded-3"> Brightness </h3>
+<div class="d-flex justify-content-around py-1 ">
+    <button = "increaseB" class="filter-btn btn  btn-danger  btn-sm increase_bright"> Increase + </button>
+<button = "decreaseB" class="filter-btn  btn  btn-danger btn-sm decrease_bright"> Decrease - </button>
+</div>
+
+<h3 class=" fw-normal py-2"> Contrast </h3>
+<div class="d-flex justify-content-around  py-1">
+    <button = "increaseC" class="filter-btn btn btn-sm  btn-danger increase_contrast"> Increase + </button>
+<button = "decreaseC" class="filter-btn  btn btn-danger  btn-sm decrease_contrast"> Decrease - </button>
+
+</div>
+<h3  class="py-2"> Saturation </h3>
+<div class="d-flex justify-content-around  py-1">
+    <button = "increaseS" class="filter-btn btn  btn-danger increase_saturation"> Increase + </button>
+<button = "decreaseS" class="filter-btn  btn btn-danger decrease_saturation"> Decrease - </button>
+</div>
+
+</div>
+<div class="Effects">
+<h1  class="py-2"> Effects </h1>
+<div class="d-flex justify-content-evenly  py-1">
+    <button = "vintage" class="filter-btn btn  btn-danger vintage"> Vintage </button>
+<button = "lomo" class="filter-btn btn  btn-danger lomo"> Lomo </button>
+<button = "clarity" class="filter-btn  btn btn-danger vintage"> Clarity </button>
+<button = "sincity" class="filter-btn  btn btn-danger lomo"> Sin City </button>
+</div>
+
+
+</div>
+
+
+<br> <br>
+
+
+<button id="remove-btn" class="removeBtn px-5 btn-danger btn "> Clear Filters</button>
+
+
+    </div>
+
+
+ </body>
+</html>
